@@ -1,6 +1,5 @@
 <template>
   <body>
-
     <header>
       <img src="/src/assets/logo.JPG" width="300px" height="100px" />
       <ul>
@@ -35,20 +34,52 @@
       <div class="topbox"></div>
 
       <div class="midbox">
+        <div class="sidebox">
+          <div class="listmenu"></div>
+        </div>
 
-       <div class="sidebox">
-        <div class="listmenu"></div>
-       </div>
-
-       <div class="twobox">
-        <div class="listbox"></div>
-        <div class="bottombox"></div>
-       </div>
-
+        <div class="twobox">
+          <div class="listbox">
+            <div>
+              <table class="board">
+                <colgroup>
+                  <col style="width: 5vw" />
+                  <col style="width: 30vw" />
+                  <col style="width: 5vw" />
+                  <col style="width: 20vw" />
+                  <col style="width: 10vw" />
+                  <col style="width: 10vw" />
+                  <col style="width: 20vw" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                    <th>댓글</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="idx in WritingInformation" :key="idx">
+                    <td>{{ idx.No }}</td>
+                    <td>{{ idx.Header }}</td>
+                    <td>{{ idx.Writer }}</td>
+                    <td>{{ idx.WritingDate }}</td>
+                    <td>{{ idx.WritingCount }}</td>
+                    <td>{{ idx.WritingComment }}</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="bottombox"></div>
+        </div>
       </div>
-
     </div>
-
   </body>
 </template>
 
@@ -56,7 +87,26 @@
 export default {
   components: {},
   data() {
-    return {};
+    return {
+      WritingInformation: [
+        {
+          No: "1",
+          Header: "제목1",
+          Writer: "김준표",
+          WritingDate: "0000-00-00",
+          WritingCount: "2",
+          WritingComment: "2",
+        },
+        {
+          No: "2",
+          Header: "제목1",
+          Writer: "김준표",
+          WritingDate: "0000-00-00",
+          WritingCount: "2",
+          WritingComment: "2",
+        },
+      ],
+    };
   },
   setup() {},
   created() {},
@@ -118,7 +168,7 @@ li {
   border: 2px groove rgba(19, 16, 16, 0.973);
 }
 
-.topbox{
+.topbox {
   display: flex;
   margin: 0;
   padding: 0;
@@ -128,7 +178,7 @@ li {
   height: 18vh;
 }
 
-.midbox{
+.midbox {
   display: flex;
   margin: 0;
   padding: 0;
@@ -138,7 +188,7 @@ li {
   height: 90vh;
 }
 
-.sidebox{
+.sidebox {
   display: flex;
   margin: 0;
   padding: 0;
@@ -149,7 +199,7 @@ li {
   justify-content: center;
 }
 
-.listmenu{
+.listmenu {
   display: flex;
   padding: 0;
   margin-top: 55px;
@@ -159,7 +209,7 @@ li {
   justify-content: space-evenly;
 }
 
-.twobox{
+.twobox {
   display: flex;
   margin: 0;
   padding: 0;
@@ -169,7 +219,7 @@ li {
   flex-direction: column;
 }
 
-.listbox{
+.listbox {
   display: flex;
   margin: 0;
   padding: 0;
@@ -178,7 +228,7 @@ li {
   height: 70vh;
 }
 
-.bottombox{
+.bottombox {
   display: flex;
   margin: 0;
   padding: 0;
@@ -187,5 +237,21 @@ li {
   height: 21vh;
 }
 
-
+table {
+  font-size: 12px;
+}
+.board {
+  background-color: white;
+  border-collapse: collapse;
+}
+thead tr {
+  background-color: grey;
+  border: 0px;
+}
+tbody tr {
+  text-align: center;
+}
+tbody tr:nth-child(2n) {
+  background-color: grey;
+}
 </style>
