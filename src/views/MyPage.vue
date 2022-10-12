@@ -77,7 +77,7 @@
 
 <script></script>
 
-<style>
+<style scoped>
 body {
   background-color: black;
   margin-top: 125px;
