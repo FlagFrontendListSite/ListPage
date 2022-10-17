@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import PageHeader from "@/components/PageHeader.vue";
 </script>
 
 <template>
@@ -7,7 +8,9 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterLink to="/">Main</RouterLink>
     <RouterLink to="/list">List</RouterLink>
     <RouterLink to="/myPage">MyPage</RouterLink>
+    <RouterLink to="/searchPage">Search</RouterLink>
   </nav>
+  <PageHeader />
   <RouterView />
 </template>
 

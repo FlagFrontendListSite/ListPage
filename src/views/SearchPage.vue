@@ -6,34 +6,6 @@ import "../css/search_table.css";
 </script>
 <template>
   <body>
-    <header>
-      <img src="src/assets/logo.JPG" width="300px" height="100px" />
-      <ul>
-        <button class="dropbtn"><h3>FLAG</h3></button>
-        <div class="dropdown-content"></div>
-
-        <button class="dropbtn"><h3>BORDER</h3></button>
-        <div class="dropdown-content"></div>
-        <div class="dropdown">
-          <button class="dropbtn"><h3>ACTIVITY</h3></button>
-          <div class="dropdown-content">
-            <a href="#"><h3>STUDY</h3></a>
-            <a href="#"><h3>PROJECT</h3></a>
-          </div>
-        </div>
-        <button class="dropbtn"><h3>NOTICE</h3></button>
-        <div class="dropdown-content">
-          <a href="#"></a>
-        </div>
-        <li>
-          <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input class="search-bar__input" type="search" placeholder="검색" />
-          </div>
-        </li>
-      </ul>
-    </header>
-
     <div class="container">
       <div class="headerbox">
         <h1>검색결과</h1>
@@ -57,7 +29,7 @@ import "../css/search_table.css";
                   <ul>
                     <li>
                       <span class="number">1072</span>
-                      게시글 현재 번호 
+                      게시글 현재 번호
                       <a href="#" class="detail">
                         <span class="title">조던1조던1</span>
                         <span class="writer">준표킴</span>
@@ -70,7 +42,7 @@ import "../css/search_table.css";
 
                     <li>
                       <span class="number">1071</span>
-                      게시글 현재 번호 
+                      게시글 현재 번호
                       <a href="#" class="detail">
                         <span class="title">조던1조던1</span>
                         <span class="writer">준표킴</span>
@@ -107,9 +79,11 @@ import "../css/search_table.css";
                   <div class="selected_c_head">
                     <h6>에어조던11 브레드 미드 2019</h6>
                     <div class="selected_content">
-                      <span>조던1을 왜 검색어로 만들어서 잘 모르는데 내용을
+                      <span
+                        >조던1을 왜 검색어로 만들어서 잘 모르는데 내용을
                         적어야하니 아주 막막하다. 에어조던11 브레드 미드 2019
-                        일단 아무말 열심히 따라 써본다.</span>
+                        일단 아무말 열심히 따라 써본다.</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -144,37 +118,13 @@ body {
   margin-top: 125px;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   align-items: center;
 }
 
 a {
   text-decoration-line: none;
-}
-
-header {
-  height: 65px;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-  background: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  position: fixed;
-  top: 0;
-  /* width: 100% */
-  left: 0;
-  right: 0;
-}
-
-ul {
-  display: flex;
-}
-li {
-  margin: 30px;
-  list-style-type: none;
 }
 
 .container {
@@ -201,7 +151,6 @@ li {
   border: 2px groove white;
   width: 100%;
   height: 15vh;
-  margin-top: 25vh;
   padding-left: 20vw;
   color: white;
 }
@@ -279,5 +228,4 @@ li {
   height: 21vh;
   border: 2px groove yellow;
 }
-
 </style>

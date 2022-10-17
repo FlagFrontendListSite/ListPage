@@ -1,32 +1,5 @@
 <template>
   <body>
-    <header>
-      <img src="src/assets/logo.JPG" width="300px" height="100px" />
-      <ul>
-        <button class="dropbtn"><h3>FLAG</h3></button>
-        <div class="dropdown-content"></div>
-
-        <button class="dropbtn"><h3>BORDER</h3></button>
-        <div class="dropdown-content"></div>
-        <div class="dropdown">
-          <button class="dropbtn"><h3>ACTIVITY</h3></button>
-          <div class="dropdown-content">
-            <a href="#"><h3>STUDY</h3></a>
-            <a href="#"><h3>PROJECT</h3></a>
-          </div>
-        </div>
-        <button class="dropbtn"><h3>NOTICE</h3></button>
-        <div class="dropdown-content">
-          <a href="#"></a>
-        </div>
-        <li>
-          <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input class="search-bar__input" type="search" placeholder="검색" />
-          </div>
-        </li>
-      </ul>
-    </header>
     <div class="container">
       <div class="box1">
         <div class="myinformation">
@@ -60,7 +33,7 @@
               </div>
               <div class="acti4">
                 <p>· 알고리즘 스터디 (코테반)</p>
-                <P>· FLAG-게시판 (BE)</p>
+                <P>· FLAG-게시판 (BE)</P>
               </div>
             </div>
           </div>
@@ -88,22 +61,6 @@ body {
   align-items: center;
 }
 
-header {
-  height: 65px;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-  background: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  position: fixed;
-  top: 0;
-  /* width: 100% */
-  left: 0;
-  right: 0;
-}
-
 .menu {
   height: 60px;
   padding-bottom: 40px;
@@ -118,14 +75,6 @@ header {
   /* width: 100% */
   left: 0;
   right: 0;
-}
-
-ul {
-  display: flex;
-}
-li {
-  margin: 30px;
-  list-style-type: none;
 }
 
 .container {
@@ -149,7 +98,7 @@ li {
   width: 42vw;
   height: 113vh;
   border: 1px groove black;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -159,7 +108,7 @@ li {
   width: 55vw;
   height: 113vh;
   border: 1px groove black;
-  margin:0;
+  margin: 0;
   padding: 0;
   justify-content: center;
   align-items: flex-end;
@@ -192,10 +141,9 @@ li {
   background-color: rgb(62, 61, 61);
   color: white;
   border: 2px groove gray;
-  font-size: 2.8em; 
+  font-size: 2.8em;
   border-radius: 70%;
   text-align: center;
-  
 }
 
 .ph {
@@ -209,7 +157,6 @@ li {
   background-color: rgb(62, 61, 61);
   color: white;
   border: 1px groove gray;
-
 }
 
 .info {
@@ -232,7 +179,7 @@ li {
   padding: 0;
   margin-left: 0.1vw;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -323,7 +270,5 @@ li {
   margin-left: 5px;
   color: white;
   font-size: 23px;
-
-
 }
 </style>

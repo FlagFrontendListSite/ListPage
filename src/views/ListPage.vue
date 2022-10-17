@@ -1,35 +1,5 @@
 <template>
   <body>
-    <header>
-      <img src="/src/assets/logo.JPG" width="300px" height="100px" />
-      <ul>
-        <button class="dropbtn"><h3>FLAG</h3></button>
-        <div class="dropdown-content">
-          <a href="#"></a>
-        </div>
-
-        <button class="dropbtn"><h3>BORDER</h3></button>
-        <div class="dropdown-content">
-          <a href="#"></a>
-        </div>
-        <button class="dropbtn"><h3>ACTIVITY</h3></button>
-        <div class="dropdown-content">
-          <a href="#">STUDY</a>
-          <a href="#">PROJECT</a>
-        </div>
-        <button class="dropbtn"><h3>NOTICE</h3></button>
-        <div class="dropdown-content">
-          <a href="#"></a>
-        </div>
-        <li>
-          <div class="search-bar">
-            <i class="fas fa-search" aria-hidden="true"></i>
-            <input class="search-bar__input" type="search" placeholder="검색" />
-          </div>
-        </li>
-      </ul>
-    </header>
-
     <div class="container">
       <div class="topbox">
         <div class="namebox">자유게시판</div>
@@ -41,7 +11,7 @@
           <div class="listmenu">
             <div class="topmenu">BOARD</div>
             <div class="bottommenu">
-              <a v-for="a in content" :key="a">{{a}}</a>
+              <a v-for="a in content" :key="a">{{ a }}</a>
             </div>
           </div>
         </div>
@@ -114,7 +84,7 @@ export default {
           WritingComment: "2",
         },
       ],
-      content: ['자유게시판','동아리 이모저모','사진게시판','정보게시판']
+      content: ["자유게시판", "동아리 이모저모", "사진게시판", "정보게시판"],
     };
   },
   setup() {},
@@ -142,30 +112,6 @@ a {
   text-decoration-line: none;
 }
 
-header {
-  height: 65px;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-  background: white;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  position: fixed;
-  top: 0;
-  /* width: 100% */
-  left: 0;
-  right: 0;
-}
-
-ul {
-  display: flex;
-}
-li {
-  margin: 30px;
-  list-style-type: none;
-}
-
 .container {
   margin: 0;
   padding: 0;
@@ -187,7 +133,7 @@ li {
   height: 18vh;
 }
 
-.namebox{
+.namebox {
   display: flex;
   margin-top: 4vw;
   margin-left: 11vw;
@@ -203,7 +149,7 @@ li {
   color: white;
 }
 
-.writebox{
+.writebox {
   display: flex;
   margin-top: 6.8vw;
   margin-left: 65vw;
@@ -251,7 +197,7 @@ li {
   flex-direction: column;
 }
 
-.topmenu{
+.topmenu {
   display: flex;
   margin: 0;
   padding: 0;
@@ -265,7 +211,7 @@ li {
   color: white;
 }
 
-.bottommenu{
+.bottommenu {
   display: flex;
   margin: 0;
   padding: 0;
