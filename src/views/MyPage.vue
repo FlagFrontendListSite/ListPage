@@ -28,7 +28,7 @@
       </ul>
     </header>
     <div class="container">
-      <div class="box">
+      <div class="box1">
         <div class="myinformation">
           <div class="photo">
             <p>사진</p>
@@ -46,27 +46,29 @@
         </div>
 
         <div class="myactivity">
-          <div class="actibox">
+          <div class="actibox1">
             <div class="acti1">
-              <p>2022</p>
+              <p>2021</p>
             </div>
             <div class="acti2">
-              <p>활동들</p>
+              <p>· 알고리즘 스터디 (기초반)</p>
             </div>
 
-            <div class="actibox">
-              <div class="acti1">
-                <p>2021</p>
+            <div class="actibox2">
+              <div class="acti3">
+                <p>2022</p>
               </div>
-              <div class="acti2">
-                <p>활동들</p>
+              <div class="acti4">
+                <p>· 알고리즘 스터디 (코테반)</p>
+                <P>· FLAG-게시판 (BE)</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="box">
+      <div class="box2">
+        <img src="src/assets/book.jpg" width="900px" height="1200px" />
         <div class="botombox">
           <p>잔디</p>
         </div>
@@ -79,10 +81,11 @@
 
 <style scoped>
 body {
-  background-color: black;
+  background-color: rgba(19, 16, 16, 0.973);
   margin-top: 125px;
   width: 100%;
   height: 100%;
+  align-items: center;
 }
 
 header {
@@ -128,31 +131,46 @@ li {
 .container {
   margin: 0;
   padding: 0;
-  width: 98vw;
-  height: 143vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-right: 2px;
-  margin-left: 2px;
-
-  border: 2px groove black;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border: 1px groove black;
 }
 
-.box {
+.box1 {
   display: flex;
   flex-direction: column;
-  width: 47vw;
-  height: 143vh;
-  border: 2px groove black;
+  width: 42vw;
+  height: 113vh;
+  border: 1px groove black;
+  margin:0;
+  padding: 0;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  width: 55vw;
+  height: 113vh;
+  border: 1px groove black;
+  margin:0;
+  padding: 0;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .myinformation {
   display: flex;
-  width: 46vw;
+  width: 42vw;
   height: 57vh;
-  border: 2px groove rgb(62, 61, 61);
-  margin: 10px;
+  border: 1px groove rgb(62, 61, 61);
+  margin: 0px;
   justify-content: space-evenly;
   align-items: center;
   margin-right: 2px;
@@ -169,12 +187,15 @@ li {
 }
 
 .photo {
-  width: 20%;
-  height: 113px;
+  width: 10vw;
+  height: 10vw;
   background-color: rgb(62, 61, 61);
   color: white;
-  border: 3px groove gray;
-  font-size: 15px;
+  border: 2px groove gray;
+  font-size: 2.8em; 
+  border-radius: 70%;
+  text-align: center;
+  
 }
 
 .ph {
@@ -183,15 +204,16 @@ li {
 }
 
 .infobox {
-  width: 30vw;
+  width: 20vw;
   height: 20vh;
   background-color: rgb(62, 61, 61);
   color: white;
   border: 1px groove gray;
+
 }
 
 .info {
-  width: 92%;
+  width: 20vw;
   height: 9vh;
   background-color: rgb(62, 61, 61);
   color: white;
@@ -202,46 +224,82 @@ li {
 
 .myactivity {
   display: flex;
-  width: 46vw;
-  height: 85vh;
-  border: 2px groove rgb(46, 46, 46);
+  width: 42vw;
+  height: 55vh;
+  border: 1px groove rgb(46, 46, 46);
   background-color: rgb(46, 46, 46);
-  margin: 10px;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.1vw;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center; 
   align-items: center;
 }
 
-.actibox {
-  width: 85%;
-  height: 130px;
+.actibox1 {
+  width: 13vw;
+  height: 5.5vw;
   background-color: rgb(46, 46, 46);
   color: white;
   border: 2px groove gray;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.actibox2 {
+  width: 13vw;
+  height: 6vw;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  border: 2px groove gray;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .acti1 {
-  width: 99%;
-  height: 30px;
+  width: 13vw;
+  height: 1.5vw;
   background-color: rgb(46, 46, 46);
   color: white;
   border: 2px groove white;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .acti2 {
-  width: 99%;
-  height: 91px;
+  width: 13vw;
+  height: 4vw;
   background-color: rgb(46, 46, 46);
   color: white;
   border: 2px groove white;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 14px;
+  font-size: 10px;
+}
+.acti3 {
+  width: 13vw;
+  height: 1.5vw;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  border: 2px groove white;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 10px;
+}
+
+.acti4 {
+  width: 13vw;
+  height: 4.5vw;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  border: 2px groove white;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 10px;
 }
 
 .ground {
@@ -256,14 +314,16 @@ li {
 }
 
 .botombox {
-  width: 47vw;
+  width: 45vw;
   height: 17vh;
   border: 2px groove gray;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   margin-right: 5px;
   margin-left: 5px;
   color: white;
   font-size: 23px;
+
+
 }
 </style>
